@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var salario = Number(prompt('Qual é o seu salario?'))
+
+        document.write(`Seu salario é ${salario.toLocaleString('pt-Br', {style: 'currency', currency: 'BRL'}).replace('R$', '💰 R$')}`)
+
+        // MELHOR FORMA DE FORMATAR PARA NÃO FICAR MUITO BAGUNCADO 
+        
+        /* var formatado = salario
+            .toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+            .replace('R$', '💰 R$');
+
+        document.write(`Seu salário é ${formatado}`); */
+    </script>
+</body>
+</html>
